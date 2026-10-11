@@ -34,7 +34,9 @@ h3 {
 
 .hero {
   position: relative;
-  min-height: 78vh;
+  height: 78vh;
+  min-height: 26rem;
+  max-height: 44rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -50,7 +52,7 @@ h3 {
 
 .hero-text {
   position: relative;
-  padding: 9vh 16px 0;
+  padding: clamp(1.25rem, 4.5vh, 3rem) 16px 0;
   text-shadow: 0 2px 18px rgba(18, 13, 31, 0.7);
 }
 
@@ -63,7 +65,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 9vw, 5.5rem);
+  font-size: clamp(2.5rem, 9vw, 4.75rem);
   letter-spacing: 0.04em;
 }
 
@@ -92,11 +94,173 @@ em {
   font-style: italic;
 }
 
+section + section {
+  margin-top: 4.5rem;
+}
+
+/* Next alignment banner */
+
+.next {
+  margin: 3rem 0 4.5rem;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  background: linear-gradient(180deg, var(--dusk), #3a2148);
+  border-bottom: 3px solid var(--sun);
+  border-radius: 2px;
+}
+
+.next p {
+  margin: 0;
+}
+
+.next-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--sun);
+}
+
+.next-what {
+  margin: 0.4rem 0 0.3rem !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.25rem, 4.5vw, 1.75rem);
+  line-height: 1.25;
+}
+
+.next-count {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+/* Horizon diagram */
+
+.horizon {
+  margin: 2rem 0 0;
+}
+
+.horizon-scroll {
+  overflow-x: auto;
+  border-radius: 2px;
+}
+
+.horizon svg {
+  display: block;
+  width: 100%;
+  min-width: 640px;
+  height: auto;
+}
+
+figcaption,
+.note {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+/* Calendar */
+
+.season {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.season span {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.events li {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  column-gap: 1rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--dusk);
+  border-left: 4px solid var(--sun);
+  border-radius: 2px;
+}
+
+.events li.set {
+  border-left-color: var(--ember);
+}
+
+.events time {
+  grid-row: span 2;
+  align-self: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.events p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.events b {
+  font-weight: 600;
+  color: var(--sun);
+}
+
+.events .set b {
+  color: #f08a63;
+}
+
+.where {
+  margin-left: 0.35rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 26rem) {
+  .events li {
+    grid-template-columns: 1fr;
+  }
+
+  .events time {
+    grid-row: auto;
+    color: var(--sun);
+  }
+
+  .where {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* Where to stand */
+
+.card-tag {
+  margin: 0 0 0.35rem;
+  font-size: 0.6875rem !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sun) !important;
+}
+
+.card-tag.set {
+  color: #f08a63 !important;
+}
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .cards article {

@@ -79,25 +79,242 @@
       </p>
     </section>
 
-    <section class="cards">
-      <article>
-        <h3>When</h3>
-        <p>Dates and times for the next alignment are being worked out. Check back soon.</p>
-      </article>
-      <article>
-        <h3>Where</h3>
-        <p>A guide to the best streets and corners for watching is on the way.</p>
-      </article>
-      <article>
-        <h3>Share</h3>
-        <p>Caught the sun at the end of your street? A photo gallery is coming.</p>
-      </article>
+    <aside class="next" id="next" aria-live="polite">
+      <p class="next-label">Next alignment</p>
+      <p class="next-what" id="next-what">Detroit Avenue sunrise &middot; March 7&ndash;10, 2027</p>
+      <p class="next-count" id="next-count">Look east from Bunts Road, a little before 7:00 AM.</p>
+    </aside>
+
+    <section>
+      <h2>Two avenues, two angles</h2>
+      <p>
+        Madison Avenue runs almost perfectly straight across the city, pointing
+        just 1&deg; north of due west. That puts its alignment right at the
+        equinox, when the sun rises at one end of the street and sets at the
+        other in the same week.
+      </p>
+      <p>
+        Detroit Avenue is two straights joined by a curve. East of Bunts Road it
+        tilts 7&deg; north of west, so the sun finds it about two weeks away from
+        the equinox. West of Warren Road it runs close to Madison's line.
+      </p>
+
+      <figure class="horizon">
+        <div class="horizon-scroll">
+          <svg viewBox="0 0 800 270" role="img" aria-label="The western horizon, showing where each avenue points and where the sun sets on its alignment dates">
+            <defs>
+              <linearGradient id="hz-sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#241a3a"/>
+                <stop offset="0.7" stop-color="#6b2d5c"/>
+                <stop offset="1" stop-color="#e2623b"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="180" fill="url(#hz-sky)"/>
+
+            <!-- the sun's setting point drifts along the horizon, about its own width each day -->
+            <g fill="#ffb347" opacity="0.28">
+              <circle cx="359" cy="180" r="12"/><circle cx="385" cy="180" r="12"/>
+              <circle cx="410" cy="180" r="12"/><circle cx="436" cy="180" r="12"/>
+              <circle cx="462" cy="180" r="12"/><circle cx="487" cy="180" r="12"/>
+              <circle cx="513" cy="180" r="12"/><circle cx="538" cy="180" r="12"/>
+              <circle cx="564" cy="180" r="12"/>
+            </g>
+            <circle cx="308" cy="180" r="12" fill="#fff0b8"/>
+            <circle cx="589" cy="180" r="12" fill="#fff0b8"/>
+
+            <rect y="180" width="800" height="90" fill="#120d1f"/>
+
+            <!-- standing stones mark where each street points -->
+            <g fill="#120d1f">
+              <rect x="292" y="128" width="7" height="54"/><rect x="317" y="128" width="7" height="54"/>
+              <rect x="573" y="128" width="7" height="54"/><rect x="598" y="128" width="7" height="54"/>
+              <rect x="570" y="120" width="38" height="9"/>
+              <rect x="289" y="120" width="38" height="9"/>
+              <rect x="329" y="140" width="6" height="42"/>
+            </g>
+
+            <g font-family="system-ui, sans-serif" font-size="14" fill="#f1e9dc">
+              <text x="308" y="62" text-anchor="end">Madison Avenue</text>
+              <text x="308" y="80" text-anchor="end" fill="#ffb347">271&deg;</text>
+              <path d="M308 88V114" stroke="#f1e9dc" stroke-width="1" opacity="0.5"/>
+
+              <text x="344" y="100">Detroit, west of Warren</text>
+              <text x="344" y="118" fill="#ffb347">272&deg;</text>
+              <path d="M332 104V134" stroke="#f1e9dc" stroke-width="1" opacity="0.5"/>
+
+              <text x="589" y="62" text-anchor="middle">Detroit, W 117th to Bunts</text>
+              <text x="589" y="80" text-anchor="middle" fill="#ffb347">277&deg;</text>
+              <path d="M589 88V114" stroke="#f1e9dc" stroke-width="1" opacity="0.5"/>
+            </g>
+
+            <g font-family="system-ui, sans-serif" font-size="13" fill="#b9adc4">
+              <path d="M254 180V196" stroke="#b9adc4" stroke-width="1"/>
+              <text x="254" y="212" text-anchor="middle">due west</text>
+              <text x="318" y="236" text-anchor="middle" fill="#f1e9dc">Mar 22 &middot; Sep 20</text>
+              <text x="589" y="236" text-anchor="middle" fill="#f1e9dc">Apr 2 &middot; Sep 9</text>
+              <text x="24" y="258">&larr; south</text>
+              <text x="776" y="258" text-anchor="end">north &rarr;</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption>
+          Looking west at sunset. The sun's setting point slides along the horizon
+          by about its own width each day, northward in spring and back south in
+          fall, passing each avenue in turn. The same picture holds at sunrise,
+          looking east.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>The 2027 calendar</h2>
+      <p>
+        Each window opens the day the sun sits on the horizon in line with the
+        street and closes the day it lines up a little higher, clear of rooftops
+        and trees. A day either side is still close.
+      </p>
+
+      <h3 class="season">Spring <span>Lakewoodhenge Week &middot; March 17&ndash;26</span></h3>
+      <ol class="events">
+        <li class="rise">
+          <time datetime="2027-03-07">Mar 7&ndash;10</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">W 117th to Bunts</span></div>
+          <p><b>Sunrise</b> looking east &middot; about 6:57&ndash;7:01 AM</p>
+        </li>
+        <li class="rise">
+          <time datetime="2027-03-17">Mar 17&ndash;20</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">west of Warren</span></div>
+          <p><b>Sunrise</b> looking east &middot; about 7:40&ndash;7:44 AM</p>
+        </li>
+        <li class="rise">
+          <time datetime="2027-03-18">Mar 18&ndash;21</time>
+          <div><strong>Madison Avenue</strong></div>
+          <p><b>Sunrise</b> looking east &middot; about 7:38&ndash;7:42 AM</p>
+        </li>
+        <li class="set">
+          <time datetime="2027-03-22">Mar 22&ndash;25</time>
+          <div><strong>Madison Avenue</strong></div>
+          <p><b>Sunset</b> looking west &middot; about 7:31&ndash;7:36 PM</p>
+        </li>
+        <li class="set">
+          <time datetime="2027-03-23">Mar 23&ndash;26</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">west of Warren</span></div>
+          <p><b>Sunset</b> looking west &middot; about 7:32&ndash;7:37 PM</p>
+        </li>
+        <li class="set">
+          <time datetime="2027-04-02">Apr 2&ndash;5</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">W 117th to Bunts</span></div>
+          <p><b>Sunset</b> looking west &middot; about 7:43&ndash;7:48 PM</p>
+        </li>
+      </ol>
+
+      <h3 class="season">Fall <span>Lakewoodhenge Week &middot; September 16&ndash;26</span></h3>
+      <ol class="events">
+        <li class="set">
+          <time datetime="2027-09-06">Sep 6&ndash;9</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">W 117th to Bunts</span></div>
+          <p><b>Sunset</b> looking west &middot; about 7:38&ndash;7:42 PM</p>
+        </li>
+        <li class="set">
+          <time datetime="2027-09-16">Sep 16&ndash;19</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">west of Warren</span></div>
+          <p><b>Sunset</b> looking west &middot; about 7:21&ndash;7:25 PM</p>
+        </li>
+        <li class="set">
+          <time datetime="2027-09-17">Sep 17&ndash;20</time>
+          <div><strong>Madison Avenue</strong></div>
+          <p><b>Sunset</b> looking west &middot; about 7:19&ndash;7:23 PM</p>
+        </li>
+        <li class="rise">
+          <time datetime="2027-09-22">Sep 22&ndash;25</time>
+          <div><strong>Madison Avenue</strong></div>
+          <p><b>Sunrise</b> looking east &middot; about 7:22&ndash;7:28 AM</p>
+        </li>
+        <li class="rise">
+          <time datetime="2027-09-23">Sep 23&ndash;26</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">west of Warren</span></div>
+          <p><b>Sunrise</b> looking east &middot; about 7:23&ndash;7:29 AM</p>
+        </li>
+        <li class="rise">
+          <time datetime="2027-10-03">Oct 3&ndash;6</time>
+          <div><strong>Detroit Avenue</strong> <span class="where">W 117th to Bunts</span></div>
+          <p><b>Sunrise</b> looking east &middot; about 7:33&ndash;7:39 AM</p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Where to stand</h2>
+      <div class="cards">
+        <article>
+          <p class="card-tag set">Sunset</p>
+          <h3>Madison, near W 117th</h3>
+          <p>Anywhere between W 117th and Bunts, looking west. Nearly two miles of straight street run out ahead of you.</p>
+        </article>
+        <article>
+          <p class="card-tag rise">Sunrise</p>
+          <h3>Madison, near Warren</h3>
+          <p>Around Warren Road or Elmwood Avenue, looking east. The same long straight, in reverse.</p>
+        </article>
+        <article>
+          <p class="card-tag set">Sunset</p>
+          <h3>Detroit, near W 117th</h3>
+          <p>Looking west toward Bunts along Detroit's straightest mile.</p>
+        </article>
+        <article>
+          <p class="card-tag rise">Sunrise</p>
+          <h3>Detroit, near Bunts</h3>
+          <p>Looking east toward W 117th as the sun comes up over the city.</p>
+        </article>
+      </div>
+      <p class="note">
+        Watch from the sidewalk or a corner, never from the roadway. These spots
+        and dates are worked out from street maps and the sun's position; trees,
+        buildings and clouds will have their say, so come a day early and scout.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>Lakewoodhenge.com &middot; Lakewood, Ohio &middot; This site is just getting started.</p>
+    <p>Lakewoodhenge.com &middot; Lakewood, Ohio</p>
+    <p>Street bearings from OpenStreetMap. Times are local and good to within a day or so.</p>
   </footer>
+
+  <script>
+    // Countdown to the next alignment window (dates are local, year-month-day).
+    (function () {
+      var events = [
+        ['2027-03-07', '2027-03-10', 'Detroit Avenue sunrise', 'March 7–10', 'Look east from Bunts Road, a little before 7:00 AM.'],
+        ['2027-03-17', '2027-03-20', 'Detroit Avenue sunrise', 'March 17–20', 'Look east from west of Warren Road, about 7:40 AM.'],
+        ['2027-03-18', '2027-03-21', 'Madison Avenue sunrise', 'March 18–21', 'Look east from near Warren Road, about 7:40 AM.'],
+        ['2027-03-22', '2027-03-25', 'Madison Avenue sunset', 'March 22–25', 'Look west from near W 117th, about 7:35 PM.'],
+        ['2027-03-23', '2027-03-26', 'Detroit Avenue sunset', 'March 23–26', 'Look west from Warren Road, about 7:35 PM.'],
+        ['2027-04-02', '2027-04-05', 'Detroit Avenue sunset', 'April 2–5', 'Look west from near W 117th, about 7:45 PM.'],
+        ['2027-09-06', '2027-09-09', 'Detroit Avenue sunset', 'September 6–9', 'Look west from near W 117th, about 7:40 PM.'],
+        ['2027-09-16', '2027-09-19', 'Detroit Avenue sunset', 'September 16–19', 'Look west from Warren Road, about 7:23 PM.'],
+        ['2027-09-17', '2027-09-20', 'Madison Avenue sunset', 'September 17–20', 'Look west from near W 117th, about 7:21 PM.'],
+        ['2027-09-22', '2027-09-25', 'Madison Avenue sunrise', 'September 22–25', 'Look east from near Warren Road, about 7:25 AM.'],
+        ['2027-09-23', '2027-09-26', 'Detroit Avenue sunrise', 'September 23–26', 'Look east from west of Warren Road, about 7:26 AM.'],
+        ['2027-10-03', '2027-10-06', 'Detroit Avenue sunrise', 'October 3–6', 'Look east from Bunts Road, about 7:36 AM.']
+      ];
+      function day(s) { var p = s.split('-'); return new Date(+p[0], p[1] - 1, +p[2]); }
+      var now = new Date();
+      var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      var what = document.getElementById('next-what');
+      var count = document.getElementById('next-count');
+      for (var i = 0; i < events.length; i++) {
+        var e = events[i];
+        if (day(e[1]) < today) continue;
+        var days = Math.round((day(e[0]) - today) / 86400000);
+        var when = days > 1 ? 'In ' + days + ' days. ' : days === 1 ? 'Tomorrow. ' : 'Happening now. ';
+        what.textContent = e[2] + ' · ' + e[3] + ', 2027';
+        count.textContent = when + e[4];
+        return;
+      }
+      what.textContent = 'The 2027 season is over';
+      count.textContent = 'Dates for next year are on the way.';
+    })();
+  </script>
 
 </body>
 </html>
