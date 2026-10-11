@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lakewoodhenge — Sunset on the Grid in Lakewood, Ohio</title>
+  <meta name="description" content="Lakewoodhenge: the evenings when the setting sun lines up with the streets of Lakewood, Ohio.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23241a3a'/%3E%3Ccircle cx='16' cy='21' r='8' fill='%23ffb347'/%3E%3Cpath d='M5 9h22v5H5zM7 14h5v14H7zM20 14h5v14h-5z' fill='%23120d1f'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <svg class="hero-art" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMax slice" role="img" aria-label="The sun setting between standing stones at the end of a Lakewood street">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1b1433"/>
+          <stop offset="0.45" stop-color="#6b2d5c"/>
+          <stop offset="0.72" stop-color="#e2623b"/>
+          <stop offset="0.9" stop-color="#ffb347"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#fff3c4" stop-opacity="0.95"/>
+          <stop offset="0.35" stop-color="#ffc861" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffb347" stop-opacity="0.75"/>
+          <stop offset="1" stop-color="#e2623b" stop-opacity="0.08"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="1200" height="600" fill="url(#sky)"/>
+      <circle cx="600" cy="440" r="330" fill="url(#glow)"/>
+      <circle cx="600" cy="440" r="78" fill="#fff0b8"/>
+
+      <!-- ground and the street running toward the sun -->
+      <rect y="470" width="1200" height="130" fill="#120d1f"/>
+      <polygon points="585,470 615,470 820,600 380,600" fill="url(#road)"/>
+
+      <!-- distant stones -->
+      <g fill="#1d1530">
+        <rect x="120" y="390" width="34" height="84"/>
+        <rect x="196" y="390" width="34" height="84"/>
+        <rect x="106" y="372" width="138" height="24"/>
+        <rect x="970" y="390" width="34" height="84"/>
+        <rect x="1046" y="390" width="34" height="84"/>
+        <rect x="956" y="372" width="138" height="24"/>
+        <rect x="300" y="404" width="30" height="70"/>
+        <rect x="870" y="404" width="30" height="70"/>
+      </g>
+
+      <!-- the great trilithon framing the sun -->
+      <g fill="#120d1f">
+        <polygon points="436,474 444,268 508,268 516,474"/>
+        <polygon points="684,474 692,268 756,268 764,474"/>
+        <polygon points="416,272 424,222 776,222 784,272"/>
+      </g>
+    </svg>
+
+    <div class="hero-text">
+      <p class="eyebrow">Lakewood, Ohio</p>
+      <h1>Lakewoodhenge</h1>
+      <p class="tagline">When the setting sun lines up with the streets of Lakewood.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>What is it?</h2>
+      <p>
+        A few evenings a year, the sun sets in line with a city's street grid and
+        pours straight down the avenues, much as it aligns with the stones at
+        <em>Stonehenge</em> on the solstice.
+      </p>
+      <p>
+        Lakewood has a grid, a western horizon, and Lake Erie sunsets worth
+        stopping for. This is our version.
+      </p>
+    </section>
+
+    <section class="cards">
+      <article>
+        <h3>When</h3>
+        <p>Dates and times for the next alignment are being worked out. Check back soon.</p>
+      </article>
+      <article>
+        <h3>Where</h3>
+        <p>A guide to the best streets and corners for watching is on the way.</p>
+      </article>
+      <article>
+        <h3>Share</h3>
+        <p>Caught the sun at the end of your street? A photo gallery is coming.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lakewoodhenge.com &middot; Lakewood, Ohio &middot; This site is just getting started.</p>
+  </footer>
+
+</body>
+</html>
